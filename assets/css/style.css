@@ -36,9 +36,9 @@ body::-webkit-scrollbar-thumb {
 
 /* custom */
 :root {
-  --main-color: #1303B5;
-  --sub-color: #1303B5 ;
-  --gradient: linear-gradient(90deg, #1303B5, #0053AD);
+  --main-color: #0491BF;
+  --sub-color: #0491BF ;
+  --gradient: linear-gradient(90deg, #0491BF, #3EC4D4);
   --bg-color: #f0eef1;
   --font-color: #7c8ba4;
 }
@@ -143,7 +143,12 @@ a:hover {
 }
 /* header */
 header {
-  background-color: var(--main-color);
+  background: linear-gradient(to right, #fff 5%, #0491BF 100%);
+}
+@media(max-width :768px){
+  header {
+    background: linear-gradient(to right, #0491BF 5%, #0491BF 100%);
+  }
 }
 header .app_img {
   display: flex;
